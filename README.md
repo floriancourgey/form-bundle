@@ -15,7 +15,7 @@ Installation is quick and easy, 3 steps process
 Run the following command :
 
 ``` bash
-$ composer require benschumi/form-bundle "^3.0@dev"
+$ composer require stoakes/form-bundle
 ```
 
 ### Step 2: Enable the bundle
