@@ -42,7 +42,7 @@ class DateType extends AbstractType
      */
     public function buildView(FormView $view, FormInterface $form, array $options)
     {
-        $configs = $options['configs'];
+        $configs = (!empty($options['configs']) ? $options['configs'] : array() ) ;
         $years = $options['years'];
 
         $configs['dateFormat'] = 'yy-mm-dd';
@@ -69,7 +69,7 @@ class DateType extends AbstractType
             'min_year' => min($years),
             'max_year' => max($years),
             'configs' => $configs,
-            'culture' => $options['culture'],
+            'culture' => (!empty($options['culture']) ? $options['culture']: '' ),
         ));
     }
 
@@ -106,7 +106,7 @@ class DateType extends AbstractType
      */
     public function getParent()
     {
-        return 'date';
+        return '\Symfony\Component\Form\Extension\Core\Type\DateType';
     }
 
     /**
