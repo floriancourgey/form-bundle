@@ -1,5 +1,5 @@
 {
-    "name": "stoakes/form-bundle",
+    "name": "floriancourgey/form-bundle",
     "type": "symfony-bundle",
     "description": "Extra form types for your Symfony2 projects",
     "keywords": ["form", "extra form"],
@@ -20,9 +20,8 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": "~2.8 || ^3.0",
-        "symfony/form": "~2.8 || ^3.0",
-        "twig/twig": "~1.14"
+        "symfony/framework-bundle": "^3",
+        "symfony/form": "^3"
     },
     "suggest": {
         "symfony/twig-bridge": "For integration into Twig templates",
